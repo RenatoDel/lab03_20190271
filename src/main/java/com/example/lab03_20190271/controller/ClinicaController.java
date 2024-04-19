@@ -16,13 +16,13 @@ public class ClinicaController {
     public ClinicaController(ClinicaRepository clinicaRepository) {
         this.clinicaRepository = clinicaRepository;
     }
-    public String listarTransportistas(){
-        List<Clinica> lista= clinicaRepository.findAll();
-        for(Clinica c: lista){
-            System.out.print("Clinica ID: "+ c.getId() );
-            System.out.print("Clinica ID: "+ c.getNombre() );
-            System.out.print("Clinica ID: "+ c.getDireccion() );
-            System.out.print("Telefono ID: "+ c.getTelefono() );
+    public String listarTransportistas() {
+        List<Clinica> lista = clinicaRepository.findAll();
+        for (Clinica c : lista) {
+            System.out.print("Clinica ID: " + c.getId());
+            System.out.print("Clinica ID: " + c.getNombre());
+            System.out.print("Clinica ID: " + c.getDireccion());
+            System.out.print("Telefono ID: " + c.getTelefono());
         }
     }
 }
